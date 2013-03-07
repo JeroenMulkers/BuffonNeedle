@@ -4,15 +4,20 @@
  */
 
 #include <stdio.h>
-#include<stdlib.h>
-#include<math.h>
+#include <stdlib.h>
+#include <math.h>
 
 const double PI = 3.14159265359;
 
 int main(int argc, const char *argv[]){
 
-    double length=0.8;
-    int N = 10000;
+    printf("Give the length (double) of the needle ]0,1[ (e.g. 0.8): ");
+    float length;
+    scanf("%f",&length);
+
+    printf("Choose number (int) of random samples (e.g. 10000): ");
+    int N;
+    scanf("%d",&N);
 
     int Nhit = 0;
     for(int i=0; i<N; i++) {
