@@ -19,6 +19,10 @@ int main(int argc, const char *argv[]){
     int N;
     scanf("%d",&N);
 
+    FILE *file;
+    file = fopen("results.dat","w");
+    fprintf(file,"n\tapprox\tapprox-pi\n");
+
     int Nhit = 0;
     for(int i=0; i<N; i++) {
 
@@ -29,7 +33,12 @@ int main(int argc, const char *argv[]){
         double x2 = x + (length/2)*cos(a);
 
         if(x1*x2 <= 0){Nhit++;}
+
+        double pi = 2 * length * (i+1)/Nhit;
+        fprintf(file,"%d\t%f\t%f\n",i,pi,pi-PI);
     }
+
+    fclose(file);
 
     double pi = 2 * length * N/Nhit;
 
