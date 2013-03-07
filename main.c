@@ -32,7 +32,10 @@ int main(int argc, const char *argv[]){
     }
 
     double pi = 2 * length * N/Nhit;
-    printf("%f",pi);
+
+    printf("\n---results------------------------\n\n");
+    printf("Approximation with MC simulations:\npi = %f\n\n",pi);
+    printf("Exact result:\npi = %f\n",PI);
 
     return 0;
 }
