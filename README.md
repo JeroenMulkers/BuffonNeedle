@@ -15,10 +15,10 @@ Buffon's needle was the earliest problem in geometric probability to be solved; 
 How I handle the problem
 -------------------------
 
-The problem becomes very simple if one assumes that the needle is smaller then the distance d between the parallel lines. Due to this assumption the needle can only hit one line at the time. This is the problem tackled in this little project.
+The problem appears very simple when assuming the needle to be smaller than the distance d between the parallel lines. Due to this assumption, the needle can only hit a single line per fall. This is the problem tackled in this little project.
 
-The problem is invariant by a translation in the same direction as the parallel lines (y-axis). The only two variables which determines if the needle hits/misses the line are:
+The problem remains invariant when a translation in the direction of the parallel lines (y-axis) occurs. Only two variables determine whether or not the needle hits the line:
 - The angle under which the needle is rotated.
-- The center of the needle projected on the axis perpendicular on the parallel lines (x-axis)
+- The center of the needle projected on the axis perpendicular to the parallel lines (x-axis).
 
-One virtual line perpendicular to the y-axis is placed at x=0. The falling needle is simulated by a random x position between -d/2 and d/2. This position represent the middle of the needle. A second random number represent the angle of the needle. With this both random numbers the x-positions of the edges of needle can be calculated. If the product of these positions are negative then needle hits the line. If the product is positive, the needle misses the line.
+One virtual line, perpendicular to the y-axis, is placed at x=0. The falling needle is simulated by a random position x between –d/2 and d/2. This position represents the middle of the needle. A second random number represents the angle of the needle. These two random numbers allow the x-positions of the edges of the needle to be calculated. If the product of these positions is negative, the needle hits the line. If the product is positive, the needle misses the line.
