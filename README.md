@@ -15,7 +15,7 @@ Buffon's needle was the earliest problem in geometric probability to be solved; 
 How I handle the problem
 -------------------------
 
-The problem becomes very simple if one assume that the needle is smaller then the distance d between the parallel lines. Due to this assumption the needle can only hit one line at the time. This is the problem tackled in this little project.
+The problem becomes very simple if one assumes that the needle is smaller then the distance d between the parallel lines. Due to this assumption the needle can only hit one line at the time. This is the problem tackled in this little project.
 
 The problem is invariant by a translation in the same direction as the parallel lines (y-axis). The only two variables which determines if the needle hits/misses the line are:
 - The angle under which the needle is rotated.
