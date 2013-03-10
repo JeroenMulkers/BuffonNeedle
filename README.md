@@ -21,4 +21,4 @@ The problem remains invariant when a translation in the direction of the paralle
 - The angle under which the needle is rotated.
 - The center of the needle projected on the axis perpendicular to the parallel lines (x-axis).
 
-One virtual line, perpendicular to the y-axis, is placed at x=0. The falling needle is simulated by a random position x between –d/2 and d/2. This position represents the middle of the needle. A second random number represents the angle of the needle. These two random numbers allow the x-positions of the edges of the needle to be calculated. If the product of these positions is negative, the needle hits the line. If the product is positive, the needle misses the line.
+One virtual line, perpendicular to the x-axis, is placed at x=0. The falling needle is simulated by a random position x between –d/2 and d/2. This position represents the middle of the needle. A second random number represents the angle of the needle. These two random numbers allow the x-positions of the edges of the needle to be calculated. If the product of these positions is negative, the needle hits the line. If the product is positive, the needle misses the line.
